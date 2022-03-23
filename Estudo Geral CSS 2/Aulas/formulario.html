@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+  </head>
+  <body>
+    <h2>Estilizando formulários</h2>
+    <form>
+      <fieldset> <!-- agrupa dados semelhantes -->
+        <legend>Dados para contato</legend>
+        <div>
+          <label for="nome">Nome:</label> <!-- identificar as caixas de texto -->
+          <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+          <label for="email">Email:</label> <!-- identificar as caixas de texto -->
+          <input type="text" name="email" id="email">
+        </div>
+        <div>
+          <label for="url">URL:</label> <!-- identificar as caixas de texto -->
+          <input type="text" name="url" id="url">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Comentários</legend>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" rows="8" cols="80"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Lembrar de mim?</legend>
+        <div>
+          <label for="lembrar">
+            <input class="radio" type="radio" name="lembrar" id="sim">Sim
+          </label>
+        </div>
+        <div>
+          <label for="lembrar">
+            <input class="radio" type="radio" name="lembrar" id="sim">Não
+          </label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

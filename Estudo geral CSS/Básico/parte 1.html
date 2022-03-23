@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parte 1 - CSS</title>
+
+    <!-- INTERNAL STYLE SHEET --> <!-- feito internamente na estrutura html do código -->
+    <style type="text/css">
+      p { /* aplica o estilo em TODAS as tags p*/
+        color: rgb(255, 130, 0);
+      }
+
+      h1 {
+        color: rgb(34, 121, 16);
+      }
+
+      /*CLASSES E IDS*/
+            .azul { /* CLASSES */ /* CLASSES sao recomendadas para diversas aplicações */
+        color: rgb(14, 90, 237);
+      }
+
+      #principal { /* IDS */ /* IDS sao recomendadas para aplicações únicas*/
+        color: rgb(255, 0, 176);
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <h1>CSS</h1>
+    <!-- INLINE STYLE --> <!-- feito na própria linha de código -->
+    <p style="color:rgb(115, 14, 120);">
+      Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit.
+      Duis maximus, mauris sed imperdiet
+      dignissim, neque augue egestas arcu,
+      vel auctor ligula dui pharetra orci.
+      Pellentesque tincidunt gravida convallis.
+      Interdum et malesuada fames ac ante ipsum
+      primis in faucibus. Maecenas nec
+      scelerisque elit. </p>
+
+    <!-- INTERNAL STYLE SHEET -->
+    <!-- feito na <head></head> -->
+    <p>
+      Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit.
+      dignissim, neque augue egestas arcu,
+      vel auctor ligula dui pharetra orci.
+      Pellentesque tincidunt gravida convallis.
+      primis in faucibus. Maecenas nec
+      scelerisque elit. </p>
+
+    <!-- CLASSES E IDS --><!-- feito na <head></head> -->
+    <p class="azul"> <!-- CLASSES E IDS sao utilizadas para personalizações únicas-->
+      Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit.
+      dignissim, neque augue egestas arcu,
+      vel auctor ligula dui pharetra orci.
+      Pellentesque tincidunt gravida convallis.
+      primis in faucibus. Maecenas nec
+      scelerisque elit. </p>
+
+    <p id="principal">
+      Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit.
+      dignissim, neque augue egestas arcu,
+      vel auctor ligula dui pharetra orci.
+      Pellentesque tincidunt gravida convallis.
+      primis in faucibus. Maecenas nec
+      scelerisque elit. </p>
+  </body>
+</html>

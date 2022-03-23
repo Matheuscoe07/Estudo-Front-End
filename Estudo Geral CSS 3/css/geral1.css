@@ -1,0 +1,168 @@
+/*ARREDONDAMENTO E BOX SIZING*/
+#caixa1 {
+  width: 300px;
+  height: 300px;
+  background: rgb(241, 150, 76);
+  padding: 10px;
+  margin: 10px;
+  /* para algumas versões de navegadores é necessário utilizar uma preparação para o border radius chamada prefix */
+  -webkit-border-radius: 10px 50px 80px 100px; /* algumas versões do chrome */
+  -moz-border-radius: 10px 50px 80px 100px; /* algumas versões do mozilla firefox */
+  border-radius: 10px 50px 80px 100px; /* ARREDONDAMENTO DOS CANTOS */
+}
+
+.arredondamento1 {
+  border-radius: 150px; /* METADE do tamanho da imagem forma um círculo completo */
+}
+
+#caixa2 {
+  width: 300px;
+  color: white;
+  background: rgb(47, 45, 153);
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box; /* independente do padding e margin a seção vai ficar com o mesmo tamanho denominado na height e width */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.arredondamento2 {
+  border-radius: 150px; /* METADE do tamanho da imagem forma um círculo completo */
+}
+
+/*DEGRADES E TRANSPARENCIA*/
+#caixa3 {
+  width: 564px;
+  height: 564px;
+  background: url("../imagens/kuvira.jpg");
+}
+
+#caixa3 h2 {
+  background: rgba(96, 179, 134, 0.5);
+}
+
+#gradiente {                /*direções e ângulos*/ /*pode colocaqr quantas cores quiser*/
+  background: linear-gradient(to left, rgba(135, 163, 233, 0.61), rgba(159, 228, 170, 0.61));
+}
+
+/*SOMBRAS*/
+#caixa4 {
+  width: 300px;
+  height: 300px;
+  padding: 8px;
+  margin: 20px;
+  background: rgb(229, 179, 237);
+  box-shadow: 20px 20px 20px 2px rgb(143, 111, 148);
+}          /*horizontal e vertical e blur e espalhamento*/
+
+#caixa4 h2 {
+  color: white;
+  text-shadow: 3px 3px 3px rgb(103, 0, 102);
+             /*horizontal e vertical e blur*/
+}
+
+/*ANIMAÇÕES*/
+@-webkit-keyframes animacao-caixa5 {
+  from {
+    background: red;
+  }
+  to {
+    background: yellow;
+  }
+}
+
+@-moz-keyframes animacao-caixa5 {
+  from {
+    background: red;
+  }
+  to {
+    background: yellow;
+  }
+}
+
+@-o-keyframes animacao-caixa5 {
+  from {
+    background: red;
+  }
+  to {
+    background: yellow;
+  }
+}
+
+@keyframes animacao-caixa5 {
+  from {
+    background: red;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+  }
+  to {
+    background: yellow;
+    border-radius: 150px;
+    top: 200px;
+    left: 700px;
+  }
+}
+
+#caixa5 {
+  width: 300px;
+  height: 300px;
+  background: red;
+  position: relative; /*para acontecer a movimentação*/
+  /*animation-name: animacao-caixa5;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;*/
+  /*da pra fazer tudo isso acima em uma unica linha veja só*/
+  -webkit-animation: animacao-caixa5 1.5s 1s 6 alternate;
+  -moz-animation: animacao-caixa5 1.5s 1s 6 alternate;
+  -o-animation: animacao-caixa5 1.5s 1s 6 alternate;
+  animation: animacao-caixa5 1.5s 1s 6 alternate;
+}
+
+/*TRANSIÇÕES*/
+#caixa6 {
+  width: 300px;
+  height: 300px;
+  background: rgb(0, 255, 240);
+}
+
+#caixa6:hover {
+  width: 500px;
+  background: rgb(20, 255, 0);
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  /*transition: width 1.5s, background 1.5s;*/
+  transition: all 1.5s;
+}
+
+/* FLEXBOX */
+.conteudo {
+  background: rgb(249, 255, 184);
+  height: 400px;
+  margin: 10px;
+  display: flex; /* !!! */
+  flex-direction: row-reverse;
+  /*row, row-reverse, column, column-reverse*/
+  flex-wrap: wrap; /* a caixa se ajusta dentro do container (aperta eles) */
+  /*nowrap, wrap, wrap-reverse*/
+  justify-content: space-around;
+  /* flex-start, flex-end, center, space-between, space-around */
+  align-items: center;
+  /* stretch, center, flex-start, flex-end, baseline */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background: white;
+  border: 1px solid red;
+  flex-grow: 1; /* proporção de espaço ocupado por um item */
+  /* Repare que ele não respeita o width */
+  /* o oposto do flex-grow é o flex-shrink, ou seja, é a proporção de "encolhimento" */
+  /* flex-basis indica o tamanho incial do flex-item antes da distribuição */
+  /* consulta de compatibilidade de tags: https://caniuse.com/ */
+}

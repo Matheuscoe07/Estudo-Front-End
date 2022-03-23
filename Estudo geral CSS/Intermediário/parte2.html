@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parte 2 - CSS</title>
+    <style media="screen">
+      .padrao {
+        border: 1px solid rgb(0, 94, 255);
+      }
+
+      /* INLINE,BLOCK, INLINE-BLOCK */
+      .inline {
+        border: 1px solid red;
+        display: inline; /* muda o estilo do elemento */
+      }
+
+      .block {
+        border: 1px solid red;
+        display: block;
+      }
+
+      .inlineblock {
+        border: 1px solid red;
+        display: inline-block;
+      }
+
+      /* POSICIONAMENTOS */
+      /* static, relative, absolute e fixed */
+
+      #container {
+        background: rgb(212, 255, 214);
+        width: 800px;
+        margin: 10px auto; /* esse auto centraliza a seção */
+        padding: 5px;
+      }
+
+      #h1posicionamentos {
+        /* posotion: static é o padrão */
+        position: static;
+      }
+
+      #pposicionamentos1 {
+        width: 400px;
+        position: static;
+      }
+
+      #pposicionamentos2 {
+        width: 400px;
+        position: relative; /*usa se a tag position junto com as tags de posição*/
+        top: 20px; /*realinhado baseado na posição anterior ou seja, vai ser mover 20px do top pro bottom*/
+        left: 80px; /*é meio confuso mas é só pensar o contrario tipo quer que vai pra direita digita left*/
+        /*pode-se usar tb valores negativos ai eles andam no sentido que foi digitado*/
+      }
+
+      #pposicionamentos3 {
+        width: 400px;
+        background: rgba(250, 0, 0, 0.31);
+        position: absolute; /*sai do fluxo normal mas nao atrapalha os demais itens*/
+        top: 0px; /*acompanha o container original, no caso o body, em todas as direções*/
+        left: 800px; /*acompanha a rolagem de página*/
+      }
+
+      #pposicionamentos4 {
+        width: 400px;
+        background: rgba(0, 245, 255, 0.10);
+        position: fixed; /*sai do fluxo do documento*/
+        bottom: 0px; /*ele trava na tela, ou seja, vc rola a tela e ele vai junto*/
+        right: 0px;
+      }
+      /*no caso de elementos que se sobrepõe sempre o conteudo de depois se sobrepõe ao anterior*/
+      /*para mudar isso basta usar a tag z-index (... 2 = ++, 1 = +, 0 = -)(2 fica por cima do 1, o 1 fica por cima do 0)*/
+
+      /*  FORMATANDO LINKS
+      /*diferente de texto comum, os links tem estados diferentes (não visitado e visitado)*/
+      a:link{  /*links não visitados*/
+        color: rgb(207, 0, 204);
+      }
+
+      a:visited { /*links visitados*/
+        color: rgb(0, 150, 119);
+      }
+
+      a:hover { /*quando vc passa o mouse por cima*/
+        color: rgb(0, 26, 255);
+      }
+
+      a:active { /*quando vc clica em cima dele*/
+        color: rgb(0, 255, 3);
+      }
+      /*podem ter tb backgroun, texto editado e etc*/
+    </style>
+  </head>
+  <body>
+    <!-- ELEMENTOS INLINE, BLOCK E INLINE-BLOCK -->
+    <!-- BLOCK: largura ocupa toda a tela e ficam um abaixo do outro, exemplo: <h1>, <p>, <table> -->
+    <!-- INLINE: um elemento ao lado do outro e a largura depende unicamente do conteúdo, exemplos: <a>, <span> <img> -->
+    <!-- INLINE-BLOCK: largura baseada no conteudo mas os itens ficam um abaixo do outro, basta definir como display ou inline-block -->
+    <h1><em>ELEMENTOS INLINE, BLOCK E INLINE-BLOCK</em></h1>
+    <h3>(TODOS SÃO &lth2&gt)</h3>
+    <h2 class="padrao">BLOCK 1</h2>
+    <h2 class="padrao">BLOCK 2</h2>
+    <h2 class="borda">INLINE 1</h2>
+    <h2 class="borda">INLINE 2</h2>
+    <h3>uso da tag &ltspan&gt</h3> <!-- a tag span é originalmente inline -->
+    <span class="padrao">inline 1 aaaaaaaaa</span>
+    <span class="padrao">inline 2 aaaaaa</span>
+    <br> <br>
+    <span class="block">BLOCK 1</span>
+    <span class="block">BLOCK 2</span>
+    <br>
+    <span class="inlineblock">INLINE-BLOCK 1 aaaaaaaaaaaaaaaa</span>
+    <span class="inlineblock">INLINE-BLOCK 2 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span> <!-- muda de linha quando nao cabe mais nessa -->
+
+    <h1><em>POSICIONAMENTOS</em></h1>
+    <div id="container">
+      <h1 id="h1posicionamentos">Demon Slayer (Kimetsu no Yaiba) - Crítica</h1>
+      <p id="pposicionamentos1">
+        (Paragrafo 1) Baseado no mangá homônimo, escrito e ilustrado por Koyoharu Gotōge, Demon Slayer (Kimetsu no Yaiba, no título original), é um anime ambientado no Japão do início do século XX. Sua história gira em torno de Tanjiro Kamado, um jovem garoto que vive com sua mãe e seus cinco irmãos no alto de um monte, ganhando dinheiro com a venda de carvão, assim como seu falecido pai o fazia.
+      </p>
+      <p id="pposicionamentos2">
+        (Paragrafo 2) Certo dia ao voltar para casa, Tanjiro encontra uma cena de horror, toda sua família havia sido assassinada por onis – demônios devoradores de humanos – sendo Nezuko, uma de suas irmãs, a única sobrevivente do massacre. Após descobrir que sua irmã tinha se tornado um oni, porém com emoções e pensamentos humanos, Tanjiro se torna um caçador de demônios, para evitar que outras famílias passem pela mesma situação que ele, e buscar uma cura para Nezuko.
+      </p>
+      <p id="pposicionamentos3">
+        (Paragrafo 3) Com uma narrativa extremamente viciante e intrigante, o anime, produzido pelo estúdio Unfotable desde 2019, conquistou fãs ao redor do mundo inteiro, batendo recordes de audiência dos Estados Unidos ao próprio Japão. O Enredo de sua primeira temporada é dividido em 5 arcos, que narram desde o primeiro treino como matador de demônios até a aventura mais complicada do momento. A história da temporada tem seu ponto alto no penúltimo arco, tanto por ser o primeiro a juntar seus personagens principais para trabalharem juntos, quanto por ser o mais complexo e profundo, nos mostrando mais sobre seu mundo fantástico e expondo suas melhores lutas.
+      </p>
+      <p id="pposicionamentos4">
+        (Paragrafo 4) Além disso, a produção consegue mesclar muito bem os gêneros de ação, drama e comédia, que é enriquecida com ótimas histórias secundárias, o que demonstra um enredo bem analisado, fluido e bem desenvolvido.
+      </p>
+    </div>
+
+    <div>
+      <h1>FORMATANDO LINKS</h1>
+      <a href="https://youtu.be/dQw4w9WgXcQ">💰CLIQUE AQUI PARA UMA SURPRESA!!!💰</a> |
+      <a href="https://youtu.be/k53_PziipaA">📺DEPOSITE AQUI SEU STREAM!!!📺</a> |
+      <a href="https://www.tudogostoso.com.br/receita/23-bolo-de-cenoura.html">😱VOCÊ NAO VAI ACREDITAR NISSO!!!😱</a>
+    </div>
+
+  </body>
+</html>

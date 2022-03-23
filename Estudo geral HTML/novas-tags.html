@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Novas tags HTML</title>
+    <link rel="stylesheet" type="text/css" href="novas-tags.css">
+  </head>
+  <body>
+    <div class="">
+      <!-- alguns navegadores antigos nao reconhecem essas novas tags por isso utilizamos o HTML Shiv-->
+      <!-- o HTML shiv é um arquivo javascript que faz oq a tag faz mas em navegadores antigos (foco no internet explorer) -->
+      <header> <!-- tag de cabecalho que substituiria uma div que seria referente apenas ao cabecalho -->
+        <h1>Logo</h1>
+        <span>Meu site</span>
+      </header>
+
+      <nav> <!-- tag de navegacao que substituiria uma div que seria referente apenas a navegacao -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <article> <!-- tag de conteudos que substituiria uma div que seria referente apenas aos conteudos -->
+        <h3>Novas Informações!</h3>
+        <!-- dentro da secao de conteudos podemos colocar mais conteudos sub divididos na tag section -->
+        <section> <!-- secoes para separar os conteudos -->
+          <h4>1. Novas oportunidades!</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <span>
+            Atualizado em: <time>06/03/2022</time> <!-- tag para identificar a data de quando foi atualizado para identificacao de navegadores  -->
+          </span>
+        </section>
+        <section> <!-- secoes para separar os conteudos -->
+          <h4>2. Novas ideias!</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <span>
+            Atualizado em: <time>06/03/2022</time> <!-- tag para identificar a data de quando foi atualizado para identificacao de navegadores  -->
+          </span>
+        </section>
+      </article>
+
+      <aside> <!-- tag especializada em separar conteudos que ficam nas laterais do site -->
+        <h3>Sobre o autor</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </aside>
+
+      <footer> <!-- tag de rodape que substituiria uma div que seria referente apenas ao rodape -->
+        Todos os direitos reservados
+      </footer>
+    </div>
+
+    <!-- NOVOS TIPOS DE INPUT -->
+    <div class="">
+      <h1>NOVOS TIPOS DE INPUT</h1>
+      <form class="" action="index.html" method="post">
+
+        <label for="nome">Nome</label>          <!-- que é necessário -->
+        <input type="text" name="nome" value="nome" required> <br> <br>
+
+        <label for="email">Email</label>                  <!-- que o browser automaticamente foca nesse campo -->
+        <input type="text" name="email" value="email" required autofocus> <br> <br>
+
+        <label for="numero">Número</label>               <!-- intervalo de valores que vao de x em x -->
+        <input type="number" name="numero" value="numero" min="1" max="20" step="5"> <br> <br>
+
+        <label for="url">URL</label>
+        <input type="url" name="url" value="url" placeholder="ex.: https://www.google.com"> <br> <br>
+
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" name="pesquisa" value="pesquisa"> <br> <br>
+
+        <label for="range">Range</label>
+        <input type="range" name="range" value="Range" min="0" max="100" value="50"> <br> <br> <!-- apenas para browsers mais novos  -->
+
+        <label for="data">Data</label>
+        <input type="date" name="data" value="data"> <br> <br>
+
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" value="cor"> <br> <br>
+
+        <br> <input type="submit" name="" value="Enviar"> <br>
+
+      </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parallax</title>
+    <style media="screen" type="text/css">
+      /*configs padrões*/
+      body, html {
+          margin: 0;
+          font: 16px "Lato", sans-serif;
+          color: #777;
+          height: 100%; /* esse é o truque do parallax, ele expande até a area disponivel da janela */
+      }
+
+      .conteudo {
+        color: #777;
+        background-color: white;
+        text-align: justify;
+        padding: 50px 80px;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        color: #111;
+        text-align: center;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      /* efeito parallax */
+      /* começamos com a formatação padrão */
+      .caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6 {
+        height: 100%;
+        opacity: 0.75;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /*aqui é o pulo do gato*/
+      }
+
+      .caixa1 {
+        background-image: url(imagens/imagem1.jpg);
+      }
+
+      .caixa2 {
+        background-image: url(imagens/imagem2.jpg);
+      }
+
+      .caixa3 {
+        background-image: url(imagens/imagem3.jpg);
+      }
+
+      .caixa4 {
+        background-image: url(imagens/imagem4.jpg);
+      }
+
+      .caixa5 {
+        background-image: url(imagens/imagem5.jpg);
+      }
+
+      .caixa6 {
+        background-image: url(imagens/imagem6.jpg);
+      }
+
+      /*detalhes*/
+      .titulo {
+        position: absolute;
+        left: 42.5%;
+        top: 47.5%;
+        color: #fff;
+        background-color: #111;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- feito utilizando camadas -->
+    <div class="caixa1">
+      <div class="titulo">
+        PARALLAX
+      </div>
+    </div>
+    <div class="conteudo">
+      <h3>Parallax</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    <div class="caixa2">
+      Conteudo 2
+    </div>
+    <div class="conteudo">
+      <h3>Parallax</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    <div class="caixa3">
+      Conteudo 3
+    </div>
+    <div class="conteudo">
+      <h3>Parallax</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    <div class="caixa4">
+      Conteudo 4
+    </div>
+    <div class="conteudo">
+      <h3>Parallax</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    <div class="caixa5">
+      Conteudo 5
+    </div>
+    <div class="conteudo">
+      <h3>Parallax</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    <div class="caixa6">
+      Conteudo 6
+    </div>
+  </body>
+</html>

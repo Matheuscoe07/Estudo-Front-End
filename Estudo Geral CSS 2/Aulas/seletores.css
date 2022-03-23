@@ -1,0 +1,47 @@
+/* SELETORES */
+
+/*UNIVERSAL: aplica-se a todos os elementos no documento*/
+* {
+  border: 1px solid red;
+}
+
+/*DE TEXTO: seleciona elementos pelo tipo*/
+h1 {
+  color: blue;
+}
+
+/*DE CLASSE: seleciona elemento cujo atributo class tem valor especificado após o ponto*/
+.verde {
+  color: rgb(28, 255, 0);
+}
+
+p.verde { /* especifica em qual seção aquela classe irá atuar */
+  color: rgb(0, 116, 8);
+}
+
+/*DE ID: seleciona elemento cujo atributo id tem valor especificado após o # */
+#cabecalho {
+  background: rgba(255, 191, 247, 0.52);
+}
+
+/*DE FILHO: seleciona um elemento que é filho dentro de outro*/
+li>a { /* links (a) que estão dentro da lista (li) */
+  background: rgb(255, 251, 162);
+  text-decoration: none;
+} /* filho é o que esta dentro de uma seção (mas nao é filho da seção anterior) */
+
+/*DESCENDENTE: seleciona elemento que é descendente de outro elemento especificado (e nao apenas filho direto desse elemento) */
+p a { /* mesmo se tiver outros elementos aninhados ao p ele vai selecionar somente os a */
+  background: rgb(255, 207, 207);
+}
+
+/* IRMÃO ADJASCENTE: seleciona um elemento que é irmão próximo de outro */
+h2+p { /* seções que estao uma "ao lado" da outra */
+  color: rgb(0, 198, 105);
+}
+
+/* IRMÃO GERAL: irmão de outro mas não necessariamente diretamente precedente*/
+h3~p {
+  background: rgb(70, 39, 75);
+  color: rgb(255, 255, 255);
+}

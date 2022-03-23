@@ -1,0 +1,52 @@
+/*MODELO DE CAIXA*/
+.conteudo {
+  border: 1px solid red;
+  width: 150px;
+  /*padding-top: 20px; /*espaçamento entre os 4 cantos
+  padding-right: 30px;
+  padding-left: 40px;
+  padding-bottom: 50px;*/
+  /*TUDO ISSO PODE SER RESUMIDO EM UMA UNICA TAG*/
+  padding: 20px; /*ordem: superior, lateral direita, inferior, lateral esquerda (sentido horario)*/
+  /*pode também colocar só um valor, nesse caso, ele é aplicado a toda seção*/
+  /*se colocar dois valores somente entao fica: superior e inferior, laterais*/
+
+  /*espaçamento externo!!*/
+  margin: 20px; /*mesmo esquema do padding so que do lado de fora*/
+  /*para duas seções diferentes, de tamanhos de margin diferentes, predomina a que for maior*/
+}
+
+/*ELEMENTOS FLUTUANTES*/
+/* o elemento flutuante é como se ele estivesse acima do plano de edição comum */
+.flutuantes1 {
+  background: rgb(34, 151, 217);
+  border: 1px solid rgb(250, 0, 255);
+  width: 200px;
+  height: 200px;
+}
+
+.flutuantes2 {
+  background: rgb(255, 176, 0);
+  border: 1px solid rgb(250, 0, 255);
+  width: 150px;
+  height: 150px;
+  float: left; /*reajusta essa seção apra uma parte da tela (left e right)*/
+  /*mas fica na mesma altura que seria posicionada originalmente*/
+  /*caso escolha left ela ira se sobrepor a que estaria no lugar dela dps que ela se movimentou*/
+}
+
+.flutuantes3 {
+  background: rgb(255, 230, 0);
+  border: 5px solid rgb(255, 0, 0);
+  width: 150px;
+  height: 150px;
+  float: left; /*se um conteúdo não cabe na página ele cai automaticamente pra baixo*/
+  margin: 10px;
+  /*caso todos os elementos estejam flutuando em uma mesma orientação entao eles ficam em ordem nessa nova orientação*/
+}
+
+.clear {
+  /* PARA LIMPAR O FLUXO DO ELEMENTO FLUTUANTE */
+  clear: left; /* o limpar deve acompanhar a orientação do(s) elemento(s) flutuante(s) */
+  /* left, right, both, none */
+}

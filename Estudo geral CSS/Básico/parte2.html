@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parte 2 - CSS</title>
+    <style type="text/css">
+      #topo {
+        background: rgb(58, 87, 59);
+      }
+
+      .texto {
+        color: white;
+      }
+
+      #conteudo {
+        background: rgb(0, 163, 36);
+      }
+
+      .coisa {
+        background: rgb(206, 252, 182);
+        margin: 10px; /*espaçamento*/
+      }
+
+      #rodape {
+        background: rgb(94, 255, 216);
+      }
+
+      #assinatura {
+        background: rgb(186, 246, 100);
+      }
+
+      .bordas {
+        border: 1px solid rgb(0, 255, 3); /* espessura, tipo de linha e cor*/
+        /*tipo de linha: dotted, dashed, solid, double, groove (3D), ridge (3D), inset, outset, none, hidden*/
+        /*o codigo de border pode ser mais especifico como border-top ou border-width*/
+      }
+
+      .formatacao {
+        color: rgb(85, 67, 245);
+        font-size: 20px;
+        font-family: "Comic Sans MS","Georgia", serif;
+      }
+
+      .tamanho {
+        /*TAMANHO DE TEXTOS*/
+        /* tamanhos em: px, %, em (tamanho relativo a tag anterior)*/
+        font-size: 2em; /*o dobro do tamanho da tag anterior*/
+      }
+
+      .estilos {
+        font-size: 40px;
+        font-family: "OCR A std", "FreeMono", monospace;
+        font-weight: bold; /*grossura da fonte*/ /*pode ser definido por normal, bold e de 100 a 900*/
+        font-style: italic; /*italico*/
+        text-decoration: underline; /*sublinha o texto*/
+        /*text-decoration: overline; /*linha em cima do texto*/
+        /*text-decoration: line-through; /*corta o texto*/
+        /*todas essas tags podem ser resumidas em uma unica (abaixo)*/
+        /*font: /*bold 40px italic etc*/;
+      }
+
+
+      .background {
+      /*USO DE CORES E IMAEGENS DE FUNDO*/
+      /*
+      background-image: url('imagens/imagem.png');
+      background-repeat: no-repeat; --> quantas vezes a imagem vai repetir em quais direções
+      background-attachment: scroll; --> pode ser fixed ou scroll, e mostra se a imagem acompanha o rolamento da pag ou não
+      background-position: center; --> qual a posição que a imagem vai ficar referente a seção
+      */
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>TAG DIV E SPAN</h1>
+    <!-- elemento do tipo block -->
+    <div id="topo"> <!-- ocupam todo o espaço da tela -->
+      <img src="imagens/korra.jpg">
+      <ul class="texto">
+        <li><font size="6">Ela não tem os avatares anteriores</font></li>
+        <li><font size="6">Ela não tem saúde mental</font></li>
+        <li><font size="6">Ela não é hetero</font></li>
+        <li><font size="6"><strong>MAS ELA TEM O POVO!</strong></font></li>
+      </ul> <br>
+    </div> <br>
+
+    <div id="conteudo"> <!-- dentro de uma div podem ser colocadas outras divs -->
+      <div class="coisa">
+        COISA 1
+      </div>
+      <div class="coisa">
+        COISA 2
+      </div>
+      <div class="coisa">
+        COISA 3
+      </div>
+
+    </div>
+
+    <div id="rodape">
+    TODOS OS DIREITO RESERVADOS
+  </div> <br>
+
+    <!-- SPAN -->
+    <!-- elemento do tipo line -->
+    <span id="assinatura"> Matheus </span> <!-- ocupa o espaco somente do texto -->
+    <span> Coelho </span> <br><br>
+
+    <!-- BORDAS -->
+    <h1>BORDAS</h1>
+    <!-- pode ser usado em tudo -->
+    <div class="bordas">
+      BORDA <br>
+      BORDA <br>
+      BORDA <br>
+    </div>
+
+    <!-- FONTES E CORES -->
+    <h1>FONTES, TAMANHO E ESTILOS</h1>
+    <p class="formatacao">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="tamanho">Aenean in urna eu libero dignissim mollis.</p>
+    <p class="estilos">Donec vestibulum semper urna, quis fringilla eros bibendum eget.</p>
+
+  </body>
+</html>

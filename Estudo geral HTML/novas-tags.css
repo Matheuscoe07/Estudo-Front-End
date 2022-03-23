@@ -1,0 +1,26 @@
+header {
+  border: 1px solid blue;
+}
+
+nav {
+  border: 1px solid green;
+  padding: 10px;
+}
+
+footer {
+  background: rgb(141, 157, 215);
+}
+
+article {
+  background: rgb(218, 249, 119);
+}
+
+section {
+  border: 2px dotted red;
+}
+
+aside {
+  background: rgb(248, 193, 252);
+}
+
+/* NOVAS TAGS DE INPUT */
