@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- required metatags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <!--viewport = area disponivel no browser; 
+        device-width = largura do dispositivo; 
+        initial-scale = zoom padrão; 
+        shrink-to-fit = conteudo encolhe ou expande para caber -->
+    
+    <!-- Bootstrap CSS -->
+    <title>Estudo do Bootstrap</title>
+    <!--pode ser referenciado localmente (css/bootstrap.min.css) ou via web (como abaixo)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="margin-bottom: 200px; padding: 16px;">   
+    <h1 class="display-1">Editando textos</h1>
+    <!--Formatando Headers-->
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+    <!--Utilizando o display-->
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+
+    <br><br>
+
+    <!--Editando paragrafo-->
+    <p>Paragrafo comum --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+    
+    <p class="lead">Paragrafos lead --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="text-monospace">Paragrafo monospace --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="font-weight-bold">Paragrafo negrito --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="font-italic">Paragrafo italico --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="text-uppercase">Paragrafo maiúsculo --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="text-lowercase">Paragrafo minúsculo --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="text-capitalize">Paragrafo 1ª letra maiúscula --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="text-left">Paragrafo alinhado a esquerda --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="text-center">Paragrafo alinhado centralizado --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <p class="text-right">Paragrafo alinhado a direita --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <blockquote class="blockquote">
+        <p>Paragrafo como citação --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            convallis ullamcorper risus et dapibus. Mauris magna
+            justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+            porttitor odio, a facilisis dui enim vel est.</p>
+            <footer class="blockquote-footer">
+                por <cite>CITAÇÃO</cite>
+            </footer>
+    </blockquote>
+
+    <p class="text-truncate">Paragrafo que se esconde --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+    convallis ullamcorper risus et dapibus. Mauris magna
+    justo, pellentesque vitae imperdiet a, ultrices id ligula. Proin pulvinar, lorem id dictum iaculis, odio lectus
+    porttitor odio, a facilisis dui enim vel est.</p>
+
+    <!-- editando listas -->
+    <ul class="list-unstyled">
+        <li>Lista sem estilo</li>
+        <li>Lista sem estilo</li>
+        <li>Lista sem estilo</li>
+    </ul>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">lista em linha</li>
+        <li class="list-inline-item">lista em linha</li>
+        <li class="list-inline-item">lista em linha</li>
+    </ul>
+
+    <hr>
+
+    <!--ALINHAMENTO DE TEXTOS-->
+    <h1 class="display-1">Alinhamento de textos</h1>
+
+    <p class="text-justify">Parágrafo justificado --> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta scelerisque orci, eu cursus nibh luctus at. Morbi
+    dictum mattis viverra. Suspendisse vulputate lacinia ultricies. Nam porttitor pretium lacinia. Sed ac varius mi. Cras
+    condimentum gravida vestibulum. Nam eget ante dictum sapien aliquet sagittis nec in ligula. Ut vel diam vel urna
+    porttitor mattis in quis augue. Aliquam interdum lorem et facilisis mattis. Vestibulum mollis imperdiet neque quis
+    elementum. Praesent nec dui non nunc eleifend volutpat in quis metus. Ut at ultrices erat. Integer aliquam leo felis,
+    eget lobortis neque aliquam eget.</p>
+
+    <!--Configurando alinhamentos de acordo com o tamanho da tela-->
+    <!--Alinhamento responsivo
+        class text-<tela>-<alinhamento>
+            tela: sm, md, lg, xl
+            alinhamento:> left, center, right
+    -->
+    <p class="text-sm-center">tela &gt;= 576px</p>
+    <p class="text-md-center">tela &gt;= 768px</p>
+    <p class="text-lg-center">tela &gt;= 992px</p>
+    <p class="text-xl-center">tela &gt;= 1200px</p>
+
+    <!--elemento block para inline-->
+    <h1 class="bg-success d-inline">Sucesso</h1>
+    <p class="bg-success d-inline">Sucesso sucesso sucesso</p>
+
+    <br><br>
+
+    <!--elemento inline para block-->
+    <!--<span class="bg-success d-block">Sucesso sucesso sucesso</p>-->
+    
+    <!--Elemento inline-block-->
+    <h3 class="bg-success d-inline-block">Lorem Ipsum</h3>
+    <h3 class="bg-success d-inline-block">Lorem Ipsum</h3>
+    
+    <br><hr>
+    <h1 class="display-1">Elementos Flutuantes</h1>
+    
+    <br>
+    <div style="border: 1px solid red" class="clearfix">
+        <div class="float-left">Float left</div>
+        <div class="float-right">Float right</div>
+    </div>
+
+    <!--Posicionamento fixo -->
+    <h2 class="fixed-bottom">Grudado em baixo</h2>
+    <h2 class="fixed-top">Grudado em cima</h2>
+
+    <br>
+    <!--Float responsivo-->
+    <div class="float-sm-right">tela &gt;= 576px</div>
+    <div class="float-md-right">tela &gt;= 768px</div>
+    <div class="float-lg-right">tela &gt;= 992px</div>
+    <div class="float-xl-right">tela &gt;= 1200px</div>
+
+    <br>
+    <!--Colar no topo (sticky)-->
+    <ul class="list-inline sticky-top bg-success">
+        <li class="list-inline-item">Item1</li>
+        <li class="list-inline-item">Item2</li>
+        <li class="list-inline-item">Item3</li>
+        <li class="list-inline-item">Item4</li>
+        <li class="list-inline-item">Item5</li>
+    </ul>
+
+    <br><hr>
+    <h1 class="display-1">Cores e Backgrounds</h1>
+    <br>
+    <!--Classes para formatação de texto-->
+    <div>
+        <h2 class="text-primary">Texto primary</h2>
+        <h2 class="text-secondary">Texto secondary</h2>
+        <h2 class="text-success">Texto success</h2>
+        <h2 class="text-info">Texto info</h2>
+        <h2 class="text-warning">Texto warning</h2>
+        <h2 class="text-danger">Texto danger</h2>
+        <h2 class="text-light">Texto light</h2>
+        <h2 class="text-dark">Texto dark (cor padrão)</h2>
+        <h2 class="text-white">Texto white</h2>
+    </div>
+
+    <br>
+    <!--Formatação de Links-->
+    <div>
+        <a href="#" class="text-primary">Link primary</a><br>
+        <a href="#" class="text-secondary">Link secondary</a><br>
+        <a href="#" class="text-success">Link success</a><br>
+        <a href="#" class="text-info">Link info</a><br>
+        <a href="#" class="text-warning">Link warning</a><br>
+        <a href="#" class="text-danger">Link danger</a><br>
+        <a href="#" class="text-light">Link light</a><br>
+        <a href="#" class="text-dark">Link dark</a><br>
+        <a href="#" class="text-white">Link white</a><br>
+    </div>
+
+    <br>
+    <!--backgrounds-->
+    <div>
+        <h2 class="bg-primary">Texto primary</h2>
+        <h2 class="bg-secondary">Texto secondary</h2>
+        <h2 class="bg-success">Texto success</h2>
+        <h2 class="bg-info">Texto info</h2>
+        <h2 class="bg-warning">Texto warning</h2>
+        <h2 class="bg-danger">Texto danger</h2>
+        <h2 class="bg-light">Texto light</h2>
+        <h2 class="bg-dark">Texto dark (cor padrão)</h2>
+        <h2 class="bg-white">Texto white</h2>
+    </div>
+
+    <br><hr>
+    <h1 class="display-1">Margin e padding</h1>
+    <!--Aplicação de margin-->
+    <!--
+        NOMENCLATURAS
+        mt = margin top
+        mb = margin bottom
+        ml = margin left
+        mr = margin right
+        mx = margin x-axis
+        my = margin y-axis
+        m = margin everywhere
+        valores a definir = [0,5]
+    -->
+    <h2 class="bg-success mt-5 mr-5">Margin</h2>
+    <p class="bg-success mb-5 ml-5">Conteúdo principal</p>
+    <h2 class="bg-success mx-5 my-5">Margin</h2>
+    <h2 class="bg-success m-5">Margin</h2>
+
+    <br>
+    <!--Aplicação de margin-->
+    <!--
+        NOMENCLATURAS
+        pt = margin top
+        pb = margin bottom
+        pl = margin left
+        pr = margin right
+        px = margin x-axis
+        py = margin y-axis
+        p = margin everywhere
+        valores a definir = [0,5]
+    -->
+    <h2 class="bg-success pt-5 pr-5">Margin</h2>
+    <p class="bg-success pb-5 pl-5">Conteúdo principal</p>
+    <h2 class="bg-success px-5 py-5">Margin</h2>
+    <h2 class="bg-success p-5">Margin</h2>
+
+    <br><hr>
+    <h1 class="display-1">Tamanhos e bordas</h1>
+
+    <!--classes de largura-->
+    <div style="margin-bottom: 200px; width: 600px; margin: 0 auto;">
+        <div class="bg-primary w-25">width 25%</div>
+        <div class="bg-primary w-50">width 50%</div>
+        <div class="bg-primary w-75">width 75%</div>
+        <div class="bg-primary w-100">width 100%</div>
+        <div class="bg-primary w-auto">width auto</div>
+    </div>
+
+    <br><br>
+    <!--classes de altura-->
+    <div style="height: 300px; border: 1px solid gray;">
+        <div class="bg-warning d-inline-block h-25">height 25%</div>
+        <div class="bg-warning d-inline-block h-50">height 50%</div>
+        <div class="bg-warning d-inline-block h-75">height 75%</div>
+        <div class="bg-warning d-inline-block h-100">height 100%</div>
+        <div class="bg-warning d-inline-block h-auto">height auto</div>
+    </div>
+
+    <br><br>
+    <!--
+        Bordas
+        border = todas as bordas
+        border-top = borda superior
+        border-bottom = borda inferior
+        border-right = borda direita
+        border-left = borda esquerda
+    
+        Cores
+        border-<cor>: primary, secondary, success, info, warning, danger, light, dark, white
+    -->
+    <div>
+        <div class="mb-2 border border-success">todas as bordas</div>
+        <div class="mb-2 border-top border-success">borda superior</div>
+        <div class="mb-2 border-bottom border-success">borda inferior</div>
+        <div class="mb-2 border-right border-success">borda direita</div>
+        <div class="mb-2 border-left border-success">borda esquerda</div>
+    </div>
+
+    <br><br>
+    <div>
+        <div class="mb-2 border border-success rounded">toda arredondada</div>
+        <div class="mb-2 border border-success rounded-top">borda superior arredondada</div>
+        <div class="mb-2 border border-success rounded-bottom">borda inferior arredondada</div>
+        <div class="mb-2 border border-success rounded-right">borda direita arredondada</div>
+        <div class="mb-2 border border-success rounded-left">borda esquerda arredondada</div>
+        <div class="mb-2 border border-success rounded-circle">borda arredondada em cículo</div>
+    </div>
+    
+
+    <br><hr>
+    <h1 class="display-1">Botões</h1>
+    <!--
+        Botões
+        formatacao padrao: btn
+        formatação especifica:
+        btn-primary, btn-secondary, btn-success- btn-info, btn-warning, btn-danger, btn-light, btn-dark, btn-link
+    -->
+    <div>
+        <button>Botão padrão</button>
+        <button class="btn" type="button">Clique</button>
+
+        <br><br>
+        <h3>Botões com diferentes tags</h3>
+        <a class="" href="#">Link</a>
+        <button class="" type="submit">Submit</button>
+        <input class="" type="button" value="Button">
+        <input class="" type="submit" value="Input Submit">
+        <input class="" type="reset" value="Reset">
+
+        <br><br>
+        <h3>Botões com contorno</h3> <!--btn-outline-<formato>-->
+        <button class="btn btn-outline-danger" type="button">Clique</button>
+
+        <br><br>
+        <h3>Tamanho dos botões</h3> <!-- btn-sm, btn-md, btn-lg, btn-block (pequeno, médio, grande e bloco) -->
+        <button class="btn btn-warning btn-sm" type="button">Pequeno</button>
+        <button class="btn btn-warning btn-md" type="button">Médio</button>
+        <button class="btn btn-warning btn-lg" type="button">Grande</button><br><br>
+        <button class="btn btn-warning btn-block" type="button">Bloco</button>
+
+        <br><br>
+        <h3>Estados dos botões</h3> <!-- active e disabled-->
+        <button class="btn btn-outline-info" type="button">Normal</button>
+        <button class="btn btn-outline-info active" type="button">Ativo</button>
+        <button class="btn btn-outline-info disabled" type="button">Inativo</button>
+        <button class="btn btn-outline-info" type="button" data-toggle="button">Alternar</button>
+
+        <br><br>
+        <h3>Grupos de Botões - Horizontal</h3>
+        <div class="btn-group">
+            <button class="btn btn-success" type="button">Esquerda</button>
+            <button class="btn btn-success" type="button">Centro</button>
+            <button class="btn btn-success" type="button">Centro</button>
+            <button class="btn btn-success" type="button">Direita</button>
+        </div>
+
+        <br><br>
+        <h3>Grupos de Botões - Vertical</h3>
+        <div class="btn-group-vertical">
+            <button class="btn btn-danger" type="button">Esquerda</button>
+            <button class="btn btn-danger" type="button">Centro</button>
+            <button class="btn btn-danger" type="button">Centro</button>
+            <button class="btn btn-danger" type="button">Direita</button>
+        </div>
+
+        <br><br>
+        <h3>Toolbar de botões</h3>
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <button class="btn btn-success" type="button">Esquerda</button>
+                <button class="btn btn-success" type="button">Centro</button>
+                <button class="btn btn-success" type="button">Direita</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-success" type="button">Esquerda</button>
+                <button class="btn btn-success" type="button">Centro</button>
+                <button class="btn btn-success" type="button">Direita</button>
+            </div>
+        </div>
+
+        <br><br>
+        <h3>Botões dropdown</h3>
+        <div class="dropdown">
+            <button class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown" type="button">Clique</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link 1</a>
+                <a href="#" class="dropdown-item">Link 2</a>
+                <a href="#" class="dropdown-item">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+    <br><hr>
+    <h1 class="display-1">Barras de navegação</h1>
+
+    <!--
+        Tipos de navegação:
+            nav-pills
+            nav-tabs
+        Opções de alinhamento:
+            justify-content-center
+            justify-content-end
+            flex-column
+    -->
+    
+    <br>
+    <h2>Navegação simples / abas</h2>
+    <ul class="nav nav-tabs justify-content-end">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Contato</a>
+        </li>
+    </ul>
+
+    <br>
+    <h2>Barra de navegação simples</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Logo</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <br>
+    <h2>Barra de navegação com menu responsivo</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--Logo-->
+        <a href="#" class="navbar-brand">Logo</a>
+
+        <!--Hamburguer-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Links-->
+        <div class="collapse navbar-collapse" id="nav-target">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <h2>Barra de navegação com formulário</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--Logo-->
+        <a href="#" class="navbar-brand">Logo</a>
+
+        <!--Hamburguer-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Links-->
+        <div class="collapse navbar-collapse" id="nav-target2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input type="text" class="form-control" placeholder="pesquisar...">
+                <button class="btn btn-outline-success">ok</button>
+            </form>
+        </div>
+    </nav>
+
+    <br>
+    <h2>Barra de navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--Logo-->
+        <a href="#" class="navbar-brand">Logo</a>
+
+        <!--Hamburguer-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Links-->
+        <div class="collapse navbar-collapse" id="nav-target3">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle"  data-toggle="dropdown">Sobre</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Sobre 1</a>
+                        <a href="" class="dropdown-item">Sobre 2</a>
+                        <a href="" class="dropdown-item">Sobre 3</a>
+                    </di>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--LISTAS-->
+    <br><hr>
+    <h1 class="display-1">Listas</h1>
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item active">Item 1</li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+            <li class="list-group-item">Item 4</li>
+            <li class="list-group-item">Item 5</li>
+        </ul>
+    </div>
+    
+    <br><br>
+
+    <div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item">Item 2 <span class="badge badge-success">777</span></li>
+            <li class="list-group-item active">Item 3</li>
+            <li class="list-group-item">Item 4</li>
+            <li class="list-group-item">Item 5</li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div>
+        <ul class="list-group">
+            <a href="#" class="list-group-item">Link 1</a>
+            <a href="#" class="list-group-item">Link 2</a>
+            <a href="#" class="list-group-item">Link 3</a>
+            <a href="#" class="list-group-item">Link 4</a>
+            <a href="#" class="list-group-item active">Link 5</a>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+            <li class="list-group-item">Item 4 </li>
+            <li class="list-group-item">Item 5</li>
+        </ul>
+    </div>
+
+    <br><br>
+    
+    <div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Item 1</a></li>
+            <li class="breadcrumb-item"><a href="#">Item 2</a></li>
+            <li class="breadcrumb-item active">Item 3</li>
+        </ol>
+    </div>
+
+    <!--FORMULÁRIOS-->
+    <!--
+        Validação de formulários
+        classes: is-valid, is-invalid, invalid-feedback
+    -->
+    <br><hr>
+    <h1 class="display-1">Formulários</h1>
+    <form>
+        <div class="form-group">
+            <label for="usuario">Usuário</label>
+            <input class="form-control form-control-lg" type="text" id="usuario" placeholder="Digite aqui seu nome">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" id="email" placeholder="Digite aqui seu email" readonly>
+            <small class="form-text">Email será validado</small>
+        </div>
+
+        <!--Select-->
+        <div class="form-group">
+            <label for="estados">Estados</label>
+            <select class="form-control" name="estados" id="estados">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" name="mensagem" id="mensagem" rows="3"></textarea>
+        </div>
+
+        <!--FILE INPUT-->
+        <div class="form-group">
+            <label for="arquivo">Upload de arquivo</label>
+            <input class="form-control-file" type="file" id="arquivo">
+        </div>
+
+        <!--CUSTOM FILE INPUT-->
+        <div class="custom-file">
+            <label class="custom-file-label" for="arquivo2">Selecione seu arquivo</label>
+            <input class="custom-file-input" type="file" id="arquivo">
+        </div>
+
+        <br><br>
+        <div class="form-group">
+            <label id="range">Nivel de satisfação</label>
+            <input class="custom-range" type="range" name="satisfacao" id="satisfacao" min="1" max="5">
+        </div>
+
+        <input type="button" class="btn btn-outline-primary" value="Salvar">
+    </form>
+
+    <br><br>
+    <form class="form-inline">
+        <h3 class="mr-2">Formulário inline</h3>
+        <input class="form-control mr-2" type="text" placeholder="Digite seu nome de usuário">
+        <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+        <input class="form-control mr-2" type="submit" value="Enviar">
+    </form>
+
+    <!--INPUT GROUP-->
+    <br><hr>
+    <h1 class="display-1">Input group</h1>
+    <form>
+        <h2>Grupo prepend</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input class="form-control" type="text" placeholder="e-mail">
+        </div>
+        
+        <br>
+        <h2>Grupo append</h2>
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="e-mail">
+            <div class="input-group-append">
+                <span class="input-group-text">@gmail.com</span>
+            </div>
+        </div>
+    
+        <br>
+        <h2>URL customizada</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    https://site.com/usuario/
+                </span>
+            </div>
+            <input class="form-control" type="text" placeholder="Digite seu usuário">
+        </div>
+    
+        <br>
+        <h2>Moeda</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+            </div>
+    
+            <input class="form-control" type="text" placeholder="Digite um valor">
+    
+            <div class="input-group-append">
+                <span class="input-group-text">,00</span>
+            </div>
+        </div>
+        
+        <br>
+        <!--
+            type: checkbox / radio
+            -->
+        <h2>Checkbox / radio</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="radio">
+                </div>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+    
+        <br>
+        <h2>Múltiplos inputs</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">nome/e-mail</span>
+            </div>
+            <input class="form-control" type="text" placeholder="e-mail">
+            <input class="form-control" type="password" placeholder="senha">
+        </div>
+    
+        <br>
+        <h2>Pesquisas</h2>
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Pesquisar">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-warning">Pesquisar</button>
+            </div>
+        </div>
+    
+    </form>
+
+    <!--ALERTAS E BARRAS DE PROGRESSO-->
+    <br><hr>
+    <h1 class="display-1">Alertas e Barras de progresso</h1>
+    <h2>Alertas</h2>
+    <div class="alert alert-success">
+        <h5>ALERTA ALERTA ALERTA</h5>
+    </div>
+    <div class="alert alert-warning">
+        <h5>ALERTA ALERTA ALERTA</h5>
+    </div>
+
+    <h3>Fechar alerta</h3>
+    <div class="alert alert-danger alert-dismissible">
+        <button class="close" type="button" data-dismiss="alert">&times;</button>
+        <h5>ALERTA ALERTA ALERTA</h5>
+    </div>
+
+    <h3>Alerta com vários conteúdos</h3>
+    <div class="alert alert-dark">
+        <h4>Título do alerta</h4>
+        <p>Texto do alerta</p>
+        <hr>
+        <p>Texto do alerta</p>
+    </div>
+
+    <br><hr>
+    <h2>Barras de progresso</h2>
+    <h3>Simples</h3>
+    <div class="progress">
+        <div class="progress-bar w-75">75%</div>
+    </div>
+
+    <br>
+    <h3>Definindo altura</h3>
+    <div class="progress" style="height: 50px;">
+        <div class="progress-bar bg-success" style="width: 45%;">45%</div>
+    </div>
+
+    <br>
+    <h3>Listrado</h3>
+    <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped" style="width: 64%;">64%</div>
+    </div>
+
+    <br>
+    <h3>Animado</h3>
+    <div class="progress">
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 99%;">99%</div>
+    </div>
+
+    <br>
+    <h3>Múltiplas</h3>
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width: 36%;">36%</div>
+        <div class="progress-bar" style="width: 10%;">10%</div>
+        <div class="progress-bar bg-warning" style="width: 27%;">27%</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
