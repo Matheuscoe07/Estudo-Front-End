@@ -1,0 +1,39 @@
+---> INCLUINDO JS NO HTML5 <---
+
+- Incluir direto no html usando a tag <script></script>
+    - recomendada para quando o código é pequeno
+- Criar um arquivo JS e criar a referencia no arquivo (<script src=""></script>)
+    - recomendada para códigos longos
+
+- Incluir na head
+    - as instruções são carregadas antes de carregar o body
+    - pode causar um erro de precedencia de execução
+
+- referencia-se os elementos por id e class
+
+- comentário é igual css (/**/)
+    - ou de 1 linha: //
+
+- Variaveis
+    - string
+    - int
+    - float
+    - boolean
+
+- declaracao de variavel
+    - nao pode comecar com numero, apenas com letras ou _
+    - nbao usar caracteres especiais
+    - nao usar palavras reservadas da linguagem
+    - letras maiusculas e minusculas se diferenciam
+    - utiliza-se a instrução "var"
+    - = é atribuição
+    - o JS sabe quando é cada tipo de variável
+
+- comando alert(): abre uma janela de diálogo
+    - bom para debug
+
+- comando document.write(): escreve direto no browser
+    - bom para debug
+
+- comando console.log(): escreve no console
+    - bom para debug
